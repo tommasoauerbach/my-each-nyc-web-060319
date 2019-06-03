@@ -1,13 +1,9 @@
-def my_each(array)
-  if block_given?
+def my_each(collection)
     i = 0
 
-    while i < array.length
-      yield(array[i])
+    while i < collection.length
+      yield(collection[i])
       i = i + 1
     end
-
-    array
-  else
-  # code here
+    collection
 end
